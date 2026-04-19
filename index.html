@@ -5,26 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hira-BCA</title>
 	<link rel="icon" href="3logo.jpg">
+    
     <style>
         /* Body ka style */
         body {
- font-family: Arial, sans-serif; /* Text ka font */
+            font-family: Arial, sans-serif; /* Text ka font */
             text-align: center; /* Sare text center me dikhaye */
             background-color: #f5f5f5; /* Background color halka grey */
             margin: 0; /* Default margin hata diya */
             padding: 0;
            }
 
-        /* Header style */
-        .header-a {
-            background-color: green; /* Red background */
-            color: white; /* Text white color */
-            padding: 10px 0; /* Top-bottom padding 5px, left-right 0 */
-            font-size: 24px; /* Text size bada */
-            font-weight: bold; /* Bold text */
-        }
  .header-c {
-            background-color: white; /* Red background */
+            background-color: rgba(255, 255, 255,0.8); /* Red background */
             color: black; /* Text white color */
             padding: 10px 0; /* Top-bottom padding 5px, left-right 0 */
             font-size: 40px; /* Text size bada */
@@ -89,16 +82,10 @@ font-weight: bold;
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 40px;
-line-height: .5;
-
+        line-height: .5;
+        margin-top:20px;
     }
-.emoji{
-animation:blink 2s infinite;
-}
-@keyfranes blink {
-0%,50%,100% {opacity:1;}
-25%, 75% {opacity: 0;}
-}
+
 .h2{
 background-image: url("pro.png");
 background-repeat: no-repeat;
@@ -108,39 +95,102 @@ background-color: rgba(0,0,0,0.8);
 background-blend-mode: darken;
 color: white;
 }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* half width scroll kare */
-    }
-  }
   .divdiv{
-    widht:1200px;
-    height:150px;
+    
    background-color:rgb(255, 255, 255);
   }
   div img{
-    width:230px;
+    width:200px;
     height:150px;
   }
   img{
-    margin-right:50px;
+    margin-right:200px;
   }
+  .top1{
+    display:flex;
+    justify-content: center;
+    background-color:darkred;
+    flex-wrap: wrap;
+  }
+  .top1 img{
+    width:80px;
+    height:80px;
+    margin-top:10px;
+    border-radius:30px;
+  }
+  .top2{
+color:white;
+font-size:40px;
+margin-top:20px;
+line-height:30px;
+  }
+  nav{
+    background-color:darkblue;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
+  nav a{
+    padding:20px;
+   font-size:25px;
+    color:white;
+    text-decoration-line: none;
+  }
+  nav a:hover{
+    background-color:blue;
+  }
+  /* mobile view ke lie */
+  @media (max-width: 600px){
+
+    .top2{
+        font-size:20px;
+        line-height:25px;
+    }
+
+    nav a{
+        font-size:14px;
+        padding:8px;
+    }
+
+    .top1 img{
+        width:60px;
+        height:60px;
+    }
+}
+.last{
+display:inline-block;
+}
+.last img{
+    margin:0px;
+    width:250px;
+    height:400px;
+    padding:2px;
+}
     </style>
 </head>
 <body> 
-<a href="BCA Syllabus.pdf"> <marquee><font color = "blue"> Download BCA Syllabus </font>  </marquee></a>
-<br></br>
-	<a href="PPU BCA NEW SYLLABUS.pdf"> <marquee><font color = "blue"> Download BCA New Syllabus </font>  </marquee></a>
+    <header>
+    <div style="color:red; font-size:20px;"> श्री गणेशाय नम:</div>
+    <div class="top1">
+        <div ><img src="3logo.jpg"></div>
+        <div class="top2"><a>BCA Notes</a><br><a style="font-size:20px;">Patliputra University,Patna</a></div>
+    </div>
+   <nav>
+    <a href="#">Home</a>
+    <a href="#">Old Syllabus</a>
+    <a href="#">New Syllabus</a>
+    <a href="#">Computer</a>
+    <a href="#">Math</a>
+    <a href="#">English</a>
+    <a href="#">Hindi</a>
+    <a href="#">Contact</a>
+   </nav>
+</header>
+<main>
 <div class="h2">
-    <div class="header-a"> Welcome BCA Notes Website</div>
-<br></br>
     <div class ="red-box"> Select Your Year <span class="emoji"> &#128071</span> </div>
 <h1 style="margin: 1px 0;"> Bachelor of Computer Application (BCA) </h1>
-    <a href="part1.html" class="semester-btn">Part 1</a>
+    <a href="html.html" class="semester-btn">Part 1</a>
     <a href="part2.html" target="_blank" class="semester-btn">Part 2</a>
     <a href=""#" onclick="checkPassword()"" target="_blank"class="semester-btn">Part 3  </a>
 
@@ -173,57 +223,71 @@ function checkPassword() {
     }
 }
 </script>
-	<h1 style="margin: 1px 0;"> BCA - Test Series </h1>
-    <a href="test.html" class="semester-btn2">Part 1</a>
-    <a href="ugsem-2.html" target="_blank" class="semester-btn2">Part 2</a>
-    <a href="https://hira24y7.github.io/part3/" target="_blank" class="semester-btn2">Part 3</a>
-	<h1 style="margin: 1px 0;"> BCA -Project </h1>
-    <a href="https://hira24y7.github.io/mnc/" class="semester-btn2">Part 1</a>
-    <a href="ugsem-2.html" target="_blank" class="semester-btn2">Part 2</a>
-    <a href="https://hira24y7.github.io/part3/" target="_blank" class="semester-btn2">Part 3</a>
 	
-<div class ="header-b"> <marquee> HIRA KUMAR - Guest Teacher of BCA Dept. in S.P.M College, Udantpuri,Biharsharif</marquee></div>
-<div class ="header-b"> <marquee direction="left"scrollamount="10"> Designed -- Developed -- Deployed -- maintained -- By Hira Kumar</marquee></div>
-<div class="header-c"> Top MNC (Multi National Corporation) <span class="emoji"> &#128071</span> </div>
+<div class="header-c"> Top MNC (MultiNational Corporation) <span class="emoji"> &#128071</span> </div>
 <div class="divdiv">
-  <marquee scrollamount="50">
+  <marquee scrollamount="20">
   <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-500x281.png" alt="Photo1">
   <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo-500x281.png" alt="google">
-  <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo-500x281.png" alt="fb">
+  <img style="width:300px;"src="https://static.vecteezy.com/system/resources/previews/055/210/885/non_2x/meta-logo-free-download-meta-logo-free-png.png" alt="fb">
   <img style ="width:300px; height:80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png" alt="microsoft" >
-  <img style="width:400px;"src="https://www.shutterstock.com/image-vector/galati-romania-april-29-2023-600nw-2295394661.jpg" alt="apple">
    <img style="width:400px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/960px-Tata_Consultancy_Services_old_logo.svg.png" alt="tcs">
-   <img style="width:400px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="infosys">
+   <img style="width:300px;height:100px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="infosys">
    <img src="https://www.3ds.com/fileadmin/depositary/alliances/CRM_SITELOGO/20201200/100000000003019_1wipro-logo-digital-rgb.png" alt="wipro">
     <img style="width:400px;"src="https://upload.wikimedia.org/wikipedia/commons/8/82/DeloitteNewLogo.png" alt="deloitte">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/500px-HP_logo_2012.svg.png" alt="hp">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/3840px-Dell_Logo.svg.png" alt="dell">
+     <img style="width:400px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Oracle_Logo.svg/1280px-Oracle_Logo.svg.png" alt="oracle">
+     <img style="width:300px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" alt="cisco">
+    <img style="width:300px;"src="https://www.executivegrapevine.com/uploads/articles/story-accenture-cuts-11thousand-jobs.jpg" alt="accenture">
+    <img style="width:300px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQszCUovhqzglSczyWYVkeuQthyQ_AwVX1zxw&s" alt="cognizent">
   </marquee>
 </div>
-	<div class="header-c"> Top Programming Language <span class="emoji"> &#128071</span> </div>
-	<div class="divdiv">
-     <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-500x281.png" alt="amazon">
-     
-      <img src="" alt="">
-       <img src="" alt="">
-        <img src="" alt="">
-
-  </div>
-	<p> <h4> Contact - 3in1store24y7@gmail.com </h4> </p>
-<img src="https://i.postimg.cc/sXWYrWdd/3in1storelogo.jpg" alt="3in1store" width="50">
-<br></br>
-<img src="https://i.postimg.cc/k4cm8fX6/1736913653232.gif" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/fLw4wmjz/images-(15).jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/RVJYxg51/1766937359492.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/4xgR8D7V/IMG-20251115-175149.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/kMRr7JW1/1751743383471.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/bvVMjWrp/1760121521410.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/YCbD1Z1m/1752378241243.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/gkpg1msR/1755546822809.jpg" alt="3in1store" width="250">	
-<img src="https://i.postimg.cc/4x9b30Wg/1761026374034.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/8CbvJgMN/1761026220796.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/9XDBSzyD/1751024117354.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/CK6qHHPz/1747251325787.jpg" alt="3in1store" width="250">
-<img src="https://i.postimg.cc/4d38L51g/images-(14).jpg" alt="3in1store" width="300">
-<div style="background-color:yellow;">
+	<div class="header-c"> Top Developer Languages <span class="emoji"> &#128071</span> </div>
+	<div class="divdiv"><marquee scrollamount="20">
+    <img src="https://media.licdn.com/dms/image/v2/D5612AQGCsn40fwy10g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1728353641361?e=2147483647&v=beta&t=kzfqm82_7BxE-eh7eybEiFotXY6Ims9hZRBj9YNjnIc" alt="c">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1280px-ISO_C%2B%2B_Logo.svg.png" alt="c++">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDLTeb2ssFVFXtStyuvfj7IWY1xtL6Cuy9g&s" alt="java">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png" alt="css">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPSffhqBDKP-Li3YfZGFXbglfITyC1mHGBA&s" alt="js">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZE9FVgGXR74Nb0UYG5owg_sgqEzS2rIcZ7Q&s" alt="kotlin">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIB5cCHCTit8Lkew76zZ5NuVHX9ZIqhYXNpg&s" alt="swift">
+    <img src="https://www.techasoft.com/blog/2019/12/1576592374.png" alt="go">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZqZkpMyiN2uSuT7GAf6JSkJ44YsZqoQHdw&s" alt="python">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="c#">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/960px-PHP-logo.svg.png" alt="php">
+    <img src="https://media.licdn.com/dms/image/v2/D4D12AQFjcz9MrPsWDQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1669746580764?e=2147483647&v=beta&t=FH1TuoW9k7xTQH1bfvLAIqREQTmyft2glzqw-zyFm7g" alt="sql">
+    <img src="https://www.designveloper.com/wp-content/uploads/2023/01/ruby-world-1024x530.png" alt="ruby">
+    <img src="https://www.superprof.co.in/blog/wp-content/uploads/2023/01/r-programming-language-i2tutorials-980x499.jpg" alt="r">
+</marquee>  
+</div>
+</main>
+<footer>
+<br>
+<div class="last">
+<img src="https://i.postimg.cc/k4cm8fX6/1736913653232.gif" 
+<img src="https://i.postimg.cc/fLw4wmjz/images-(15).jpg" >
+<img src="https://i.postimg.cc/RVJYxg51/1766937359492.jpg" >
+<img src="https://i.postimg.cc/4xgR8D7V/IMG-20251115-175149.jpg" >
+<img src="https://i.postimg.cc/kMRr7JW1/1751743383471.jpg" >
+<img src="https://i.postimg.cc/bvVMjWrp/1760121521410.jpg" >
+<img src="https://i.postimg.cc/YCbD1Z1m/1752378241243.jpg" >
+<img src="https://i.postimg.cc/gkpg1msR/1755546822809.jpg" >	
+<img src="https://i.postimg.cc/4x9b30Wg/1761026374034.jpg" >
+<img src="https://i.postimg.cc/8CbvJgMN/1761026220796.jpg" >
+<img src="https://i.postimg.cc/9XDBSzyD/1751024117354.jpg" >
+<img src="https://i.postimg.cc/CK6qHHPz/1747251325787.jpg" ><br>
+<img style="width:500px; height:300px;"src="https://i.postimg.cc/4d38L51g/images-(14).jpg" >
+</div>
+<div>
+ <a>3in1store24y7@gmail.com</a><br>
+ <a>8210150576</a><br>
+<img style="width:100px; height:100px; margin-left:130px;"src="https://i.postimg.cc/sXWYrWdd/3in1storelogo.jpg" alt="3in1store">
+<div class ="header-b"> <marquee> HIRA KUMAR - Guest Teacher of BCA Dept. in S.P.M College, Udantpuri,Biharsharif</marquee></div>
+<div class ="header-b"> <marquee direction="left"scrollamount="10"> Designed -- Developed -- Deployed -- maintained -- By Hira Kumar</marquee></div>
+</div>
+<!-- <div style="background-color:yellow;"> 
 	<h4> HTML</h4>
 	<a href="web intor.pdf"> HTML Web intor </a><br>
 	<a href="html-1.pdf"> HTML-1</a><br>
@@ -246,10 +310,11 @@ function checkPassword() {
 	<a href="css-9.pdf"> background </a><br>
 	<a href="css-10.pdf"> Transition & animation </a><br>
 	<a href="css-11.pdf"> Box-shadow & outline </a><br>
-</div>
+   
+</div>-->
+</footer>
 </body>
 </html>
-
 
 
 
