@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hira portfolio</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+         overflow-y: scroll;
+        }
+        .top1{
+            background:linear-gradient(rgba(239, 154, 34, 0.7),rgb(255, 255, 255),rgba(6, 190, 6,0.7));
+            width:100%;
+            min-height:5vw;
+            font-size:50px;
+            color:darkblue;
+            text-align: center;
+            
+        }
+        .top2{
+            display:flex;
+            border:10px solid black;
+        }
+        .top2 img{
+            width:40%;
+            border-radius:150px;
+            border:5px solid black;
+            margin-left:10%;
+            gap:0px;
+            
+        }
+        .ptop1{
+            font-size:5rem;
+           
+        }
+        nav{
+            background-color:darkblue;
+            font-size:2rem;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position:sticky;
+            top:0px;
+        }
+            
+        nav a{
+            color:white;
+            text-decoration-line: none;
+            padding:10px;}
+            
+        nav a:hover{
+            background-color:rgba(255, 255, 18,0.7);
+            color:black;
+        }
+        @media (max-width: 600px)
+        {   
+            .ptop1{
+                font-size:2rem;
+                padding-right:10px;
+
+            }
+            nav{
+                font-size:7px;
+            }
+           .top4{
+          margin:0px;
+          padding:0px;
+           }
+           .top4 ul{
+        margin:0px;
+        font-size:10px;
+    }
+    .top4 h2{
+        text-align:center;
+        margin:0px;
+        font-size:20px;
+    }
+    .top3{
+        font-size:15px;
+        padding:10px;
+        text-align:center;
+    }
+        }
+    .top3{
+        font-size:2rem;
+        padding:10px;
+        text-align:center;
+    }
+    .top4{
+        border:5px solid black;
+        font-size:2rem;
+        
+        
+    }
+    .top4 h2{
+        text-align:center;
+        margin:0px;
+    }
+    .top4 ul{
+        margin:0px;
+    }
+   input{
+    color:blue;
+    background-color: blue;
+   }
+  .dropdown{
+        display:inline-block;
+        position:relative;
+  }
+  .drop2{
+    display:none;
+    position:absolute;
+    background:gray;
+    min-width: 150px;
+  }
+  .drop2 a{
+    display:block;
+    padding:8px;
+  }
+    </style>
+</head>
+<body>
+    <header id="home">
+    <div class="top1">
+        My Portfolio
+    </div>
+    <div class="top2">
+        <p><img src="hira.jpeg"> </p>
+        <p class="ptop1"> HIRA KUMAR </p>
+    </div></header>
+    <nav>
+        <a href="#home"> Home </a>
+        <a href="#edu"> Education </a>
+        <div class="dropdown">
+        <a href="#"> Project </a>
+            <div class="drop2">
+                <a href="#"> Result bharat colon</a>
+                <a href="#"> BCA website</a>
+                <a href="#"> Resturant website</a>
+            </div>
+        </div>
+        <a href="#exp"> Experience </a>
+        <a href="#ski"> Skills </a>
+        <a href="#obj"> Objective</a>
+        <a href="#abo">About Me</a>
+        <a href="#con">Contact</a>
+    </nav>
+    
+    <main>
+        <div class="top3">
+            "Hello, my name is Hira Kumar. I am currently working as a faculty member at SPM College, Udantpuri, Bihar Sharif, under Patliputra University."
+        </div><br><br>
+        <div id="edu" class="top4">
+          <h2> Education </h2>
+          <ul>
+            <li>MCA Qualified in 2023</li>
+            <li>STET Qualified in 2024</li>
+          </ul>
+        </div><br><br>
+        <div id="exp" class="top4">
+          <h2> Experience </h2>
+          <ul>
+            <li>Dec 2024 to Oct 2025 as a teacher in Govt. Degree College, Rajgir Unit of Patliputra university</li>
+            <li>Nov 2025 to till now as a teacher in SPM College, Udantpuri Unit of Patliputra university</li>
+            <li>Feb 2026 to till now as a teacher in Nalanda Mahila College,Biharsharif Unit of Patliputra university</li>
+          </ul>
+        </div><br><br>
+        <div id="ski"class="top4">
+          <h2> Skills </h2>
+          <ul>
+            <li>HTML <input type="range" disabled ></li>
+            <li>CSS <input type="range"  disabled></li>
+            <li>JavaScript <input type="range" disabled></li>
+            <li> C <input type="range" disabled></li>
+            <li> C++ <input type="range" disabled></li>
+             <li> Python <input type="range" disabled></li>
+             <li> SQL <input type="range" disabled></li>
+             <li> MS-Word <input type="range" disabled></li>
+             <li> MS-Excel <input type="range" disabled></li>
+             <li> MS-PowerPoint <input type="range"disabled ></li>
+             <li> PhotoShop<input type="range" disabled></li>
+          </ul>
+        </div><br><br>
+        <div id="obj" class="top4">
+          <h2> Objective </h2>
+          <ul>
+            <li> "Dedicated to delivering quality education and contributing to student success through effective teaching and continuous learning.Looking for opportunities to apply my abilities, learn new skills, and contribute meaningfully to organizational goals."</li>
+          </ul>
+        </div><br><br>
+        <div id="abo" class="top4">
+          <h2> About Me </h2>
+          <ul>
+           <li>DOB : March 1999 </li>
+            <li>Address : Nalanda, Bihar, 803101 </li>
+             <li>Religious : Hindu </li>
+              <li>Language ability : Hindi & English </li>
+          </ul>
+        </div><br><br>
+        <div id="con" class="top4">
+          <h2> Contact </h2>
+          <ul>
+           <li>Mob : 8210150576</li>
+           <li>Mail : hirahirolal@gmail.com</li>
+          </ul>
+        </div><br><br>
+       
+    </main>
+</body>
+</html>
