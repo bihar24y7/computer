@@ -7,6 +7,10 @@
 	<link rel="icon" href="3logo.jpg">
     
     <style>
+        *{
+    box-sizing: border-box;
+}
+
         /* Body ka style */
         body {
             font-family: Arial, sans-serif; /* Text ka font */
@@ -14,6 +18,7 @@
             background-color: #f5f5f5; /* Background color halka grey */
             margin: 0; /* Default margin hata diya */
             padding: 0;
+            overflow-x: hidden;
            }
 
  .header-c {
@@ -95,17 +100,26 @@ background-color: rgba(0,0,0,0.8);
 background-blend-mode: darken;
 color: white;
 }
-  .divdiv{
-    
+  .divdiv{  
    background-color:rgb(255, 255, 255);
+   margin:0;
   }
+  .divdiv img{
+    max-width:100%;
+    height:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:50px;
+}
   div img{
     width:200px;
     height:150px;
   }
-  img{
-    margin-right:200px;
-  }
+ img{
+    margin-right:0;
+    max-width:100%;
+    height:auto;
+}
   .top1{
     display:flex;
     justify-content: center;
@@ -148,15 +162,46 @@ line-height:30px;
     }
 
     nav a{
-        font-size:14px;
-        padding:8px;
+        font-size:10px;
+        padding:2px;
     }
 
     .top1 img{
         width:60px;
         height:60px;
     }
+    .header-c {
+            background-color: rgba(255, 255, 255,0.8); 
+            color: black; /* Text white color */
+            font-size: 18px; /* Text size bada */
+            font-weight: bold; /* Bold text */
+        }
+    .semester-btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 18px;
+        transition: 0.3s;
+ 	font-size: 30px;
+font-weight: bold;
 }
+.semester-btn1 {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 10px;
+        background-color: White;
+        color: darkblue;
+        text-decoration: none;
+        border-radius: 18px;
+        transition: 0.3s;
+ 	font-size: 30px;
+font-weight: bold;
+    }
+
+  }
 .last{
 display:flex;
 flex-wrap:wrap;
@@ -164,11 +209,11 @@ justify-content:space-around;
 
 }
 .last img{
-    margin:0px;
-    width:300px;
-    height:400px;
-    padding:2px;
+    width:30%;
+    height:auto;
+    margin:10px;
 }
+
     </style>
 </head>
 <body> 
@@ -178,7 +223,7 @@ justify-content:space-around;
         <div ><img src="3logo.jpg"></div>
         <div class="top2"><a>BCA Notes</a><br><a style="font-size:20px;">Patliputra University,Patna</a></div>
     </div>
-   <nav>
+  <nav>
     <a href="#">Home</a>
     <a href="bca syllabus.pdf">Old Syllabus</a>
     <a href="newsyllabus.pdf">New Syllabus</a>
@@ -193,9 +238,9 @@ justify-content:space-around;
 <div class="h2">
     <div class ="red-box"> Select Your Year <span class="emoji"> &#128071</span> </div>
 <h1 style="margin: 1px 0;"> Bachelor of Computer Application (BCA) </h1>
-    <a href="part1.html" class="semester-btn">Part 1</a>
+    <a href="part1.html" target="_blank" class="semester-btn">Part 1</a>
     <a href="part2.html" target="_blank" class="semester-btn">Part 2</a>
-    <a href=""#" onclick="checkPassword()"" target="_blank"class="semester-btn">Part 3  </a>
+    <a href="#" onclick="checkPassword()"class="semester-btn">Part 3  </a>
 
 <script>
 function checkPassword() {
@@ -208,11 +253,11 @@ function checkPassword() {
         alert("❌ Wrong Password! Access Denied.");
     }
 }
-</script>
+</script> <br><br><br>
 <h1 style="margin: 1px 0;"> BCA - PYQ (Previous Year Question) </h1>
     <a href="pyq.html" class="semester-btn1">Part 1</a>
     <a href="ugsem-2.html" target="_blank" class="semester-btn1">Part 2</a>
-    <a href=""#" onclick="checkPassword()"" target="_blank"class="semester-btn1">Part 3  </a>
+    <a href="#" onclick="checkPassword()"class="semester-btn1">Part 3  </a>
 
 <script>
 function checkPassword() {
@@ -230,46 +275,46 @@ function checkPassword() {
 <div class="header-c"> Top MNC (MultiNational Corporation) <span class="emoji"> &#128071</span> </div>
 <div class="divdiv">
   <marquee scrollamount="20">
-  <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-500x281.png" alt="Photo1">
-  <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo-500x281.png" alt="google">
-  <img style="width:300px;"src="https://static.vecteezy.com/system/resources/previews/055/210/885/non_2x/meta-logo-free-download-meta-logo-free-png.png" alt="fb">
+  <img style ="width:200px; height:80px;"src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-500x281.png" alt="Photo1">
+  <img style ="width:200px; height:80px;"src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo-500x281.png" alt="google">
+  <img style ="width:300px; height:80px;"src="https://static.vecteezy.com/system/resources/previews/055/210/885/non_2x/meta-logo-free-download-meta-logo-free-png.png" alt="fb">
   <img style ="width:300px; height:80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png" alt="microsoft" >
-   <img style="width:400px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/960px-Tata_Consultancy_Services_old_logo.svg.png" alt="tcs">
-   <img style="width:300px;height:100px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="infosys">
-   <img src="https://www.3ds.com/fileadmin/depositary/alliances/CRM_SITELOGO/20201200/100000000003019_1wipro-logo-digital-rgb.png" alt="wipro">
-    <img style="width:400px;"src="https://upload.wikimedia.org/wikipedia/commons/8/82/DeloitteNewLogo.png" alt="deloitte">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/500px-HP_logo_2012.svg.png" alt="hp">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/3840px-Dell_Logo.svg.png" alt="dell">
-     <img style="width:400px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Oracle_Logo.svg/1280px-Oracle_Logo.svg.png" alt="oracle">
-     <img style="width:300px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" alt="cisco">
-    <img style="width:300px;"src="https://www.executivegrapevine.com/uploads/articles/story-accenture-cuts-11thousand-jobs.jpg" alt="accenture">
-    <img style="width:300px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQszCUovhqzglSczyWYVkeuQthyQ_AwVX1zxw&s" alt="cognizent">
+   <img style ="width:300px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/960px-Tata_Consultancy_Services_old_logo.svg.png" alt="tcs">
+   <img style ="width:300px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="infosys">
+   <img style ="width:150px; height:80px;"src="https://www.3ds.com/fileadmin/depositary/alliances/CRM_SITELOGO/20201200/100000000003019_1wipro-logo-digital-rgb.png" alt="wipro">
+    <img style ="width:300px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/8/82/DeloitteNewLogo.png" alt="deloitte">
+     <img style ="width:150px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/500px-HP_logo_2012.svg.png" alt="hp">
+     <img style ="width:130px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/3840px-Dell_Logo.svg.png" alt="dell">
+     <img style ="width:300px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Oracle_Logo.svg/1280px-Oracle_Logo.svg.png" alt="oracle">
+     <img style ="width:300px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" alt="cisco">
+    <img style ="width:300px; height:80px;"src="https://www.executivegrapevine.com/uploads/articles/story-accenture-cuts-11thousand-jobs.jpg" alt="accenture">
+    <img style ="width:250px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQszCUovhqzglSczyWYVkeuQthyQ_AwVX1zxw&s" alt="cognizent">
   </marquee>
 </div>
 	<div class="header-c"> Top Developer Languages <span class="emoji"> &#128071</span> </div>
 	<div class="divdiv"><marquee scrollamount="20">
-    <img src="https://media.licdn.com/dms/image/v2/D5612AQGCsn40fwy10g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1728353641361?e=2147483647&v=beta&t=kzfqm82_7BxE-eh7eybEiFotXY6Ims9hZRBj9YNjnIc" alt="c">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1280px-ISO_C%2B%2B_Logo.svg.png" alt="c++">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDLTeb2ssFVFXtStyuvfj7IWY1xtL6Cuy9g&s" alt="java">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png" alt="css">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPSffhqBDKP-Li3YfZGFXbglfITyC1mHGBA&s" alt="js">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZE9FVgGXR74Nb0UYG5owg_sgqEzS2rIcZ7Q&s" alt="kotlin">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIB5cCHCTit8Lkew76zZ5NuVHX9ZIqhYXNpg&s" alt="swift">
-    <img src="https://www.techasoft.com/blog/2019/12/1576592374.png" alt="go">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZqZkpMyiN2uSuT7GAf6JSkJ44YsZqoQHdw&s" alt="python">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="c#">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/960px-PHP-logo.svg.png" alt="php">
-    <img src="https://media.licdn.com/dms/image/v2/D4D12AQFjcz9MrPsWDQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1669746580764?e=2147483647&v=beta&t=FH1TuoW9k7xTQH1bfvLAIqREQTmyft2glzqw-zyFm7g" alt="sql">
-    <img src="https://www.designveloper.com/wp-content/uploads/2023/01/ruby-world-1024x530.png" alt="ruby">
-    <img src="https://www.superprof.co.in/blog/wp-content/uploads/2023/01/r-programming-language-i2tutorials-980x499.jpg" alt="r">
+    <img style ="width:200px; height:80px;"src="https://media.licdn.com/dms/image/v2/D5612AQGCsn40fwy10g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1728353641361?e=2147483647&v=beta&t=kzfqm82_7BxE-eh7eybEiFotXY6Ims9hZRBj9YNjnIc" alt="c">
+    <img style ="width:120px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1280px-ISO_C%2B%2B_Logo.svg.png" alt="c++">
+    <img style ="width:220px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDLTeb2ssFVFXtStyuvfj7IWY1xtL6Cuy9g&s" alt="java">
+    <img style ="width:120px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="html">
+    <img style ="width:90px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png" alt="css">
+    <img style ="width:120px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPSffhqBDKP-Li3YfZGFXbglfITyC1mHGBA&s" alt="js">
+    <img style ="width:300px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZE9FVgGXR74Nb0UYG5owg_sgqEzS2rIcZ7Q&s" alt="kotlin">
+    <img style ="width:200px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIB5cCHCTit8Lkew76zZ5NuVHX9ZIqhYXNpg&s" alt="swift">
+    <img style ="width:150px; height:80px;"src="https://www.techasoft.com/blog/2019/12/1576592374.png" alt="go">
+    <img style ="width:200px; height:80px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZqZkpMyiN2uSuT7GAf6JSkJ44YsZqoQHdw&s" alt="python">
+    <img style ="width:150px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="c#">
+    <img style ="width:200px; height:80px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/960px-PHP-logo.svg.png" alt="php">
+    <img style ="width:250px; height:80px;"src="https://media.licdn.com/dms/image/v2/D4D12AQFjcz9MrPsWDQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1669746580764?e=2147483647&v=beta&t=FH1TuoW9k7xTQH1bfvLAIqREQTmyft2glzqw-zyFm7g" alt="sql">
+    <img style ="width:300px; height:80px;"src="https://www.designveloper.com/wp-content/uploads/2023/01/ruby-world-1024x530.png" alt="ruby">
+    <img style ="width:300px; height:80px;"src="https://www.superprof.co.in/blog/wp-content/uploads/2023/01/r-programming-language-i2tutorials-980x499.jpg" alt="r">
 </marquee>  
 </div>
 </main>
 <footer>
 <br>
 <div class="last">
-<img src="https://i.postimg.cc/k4cm8fX6/1736913653232.gif" 
+<img src="https://i.postimg.cc/k4cm8fX6/1736913653232.gif" >
 <img src="https://i.postimg.cc/fLw4wmjz/images-(15).jpg" >
 <img src="https://i.postimg.cc/RVJYxg51/1766937359492.jpg" >
 <img src="https://i.postimg.cc/4xgR8D7V/IMG-20251115-175149.jpg" >
@@ -284,9 +329,9 @@ function checkPassword() {
 <img style="width:300px; height:150px;"src="https://i.postimg.cc/4d38L51g/images-(14).jpg" >
 </div>
 <div>
- <a>3in1store24y7@gmail.com</a><br>
- <a>8210150576</a><br>
-<img style="width:100px; height:100px; margin-left:130px;"src="https://i.postimg.cc/sXWYrWdd/3in1storelogo.jpg" alt="3in1store">
+ <a> &#128231; 3in1store24y7@gmail.com</a><br>
+ <a>&#9742; 8210150576</a><br>
+<img style="width:50px; height:50px; border-radius:30px;"src="https://i.postimg.cc/sXWYrWdd/3in1storelogo.jpg" alt="3in1store">
 <div class ="header-b"> <marquee> HIRA KUMAR - Guest Teacher of BCA Dept. in S.P.M College, Udantpuri,Biharsharif</marquee></div>
 <div class ="header-b"> <marquee direction="left"scrollamount="10"> Designed -- Developed -- Deployed -- maintained -- By Hira Kumar</marquee></div>
 </div>
@@ -318,7 +363,6 @@ function checkPassword() {
 </footer>
 </body>
 </html>
-
 
 
 
